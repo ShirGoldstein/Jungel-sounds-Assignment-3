@@ -21,19 +21,22 @@ document.addEventListener("click", function startMusic() {
 // -------------------------------------------
 const musicToggleBtn = document.getElementById("music-toggle");
 
-musicToggleBtn.addEventListener("click", function() {
-    if (bgMusic.paused) {
-        // Resume music
-        bgMusic.play();
-        musicToggleBtn.textContent = "🔊 Stop Forest Sounds";
-        musicToggleBtn.classList.remove("muted");
-    } else {
-        // Pause music
-        bgMusic.pause();
-        musicToggleBtn.textContent = "🔇 Play Forest Sounds";
-        musicToggleBtn.classList.add("muted");
-    }
-});
+// Only add the listener if the button exists in the page
+if (musicToggleBtn) {
+    musicToggleBtn.addEventListener("click", function() {
+        if (bgMusic.paused) {
+            // Resume music
+            bgMusic.play();
+            musicToggleBtn.textContent = "🔊 Stop Forest Sounds";
+            musicToggleBtn.classList.remove("muted");
+        } else {
+            // Pause music
+            bgMusic.pause();
+            musicToggleBtn.textContent = "🔇 Play Forest Sounds";
+            musicToggleBtn.classList.add("muted");
+        }
+    });
+}
 
 // -------------------------------------------
 // 2. BUILD KEY MAP — map each keyboard key to its animal card
