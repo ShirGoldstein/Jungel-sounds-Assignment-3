@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shir Goldstein Jungle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background music plays on page load (autoplay with muted trick for browsers) -->
+    <audio id="background-music" src="sounds/forest-sound.mp3" loop></audio>
+
+    <header>
+        <h1>🌿 My Jungle – Shir Goldstein 🌿</h1>
+        <p class="subtitle">Click an animal or press its key to hear it!</p>
+        <button id="music-toggle">🔊 Stop Forest Sounds</button>
+    </header>
+
+    <main>
+        <div class="animals-grid">
+
+            <div class="animal-card" data-sound="sounds/dog.mp3" data-key="d">
+                <img src="images/dog.png" alt="Dog">
+                <div class="animal-info">
+                    <span class="animal-name">Dog</span>
+                    <span class="key-badge">D</span>
+                </div>
+            </div>
+
+            <div class="animal-card" data-sound="sounds/cat.mp3" data-key="c">
+                <img src="images/cat.png" alt="Cat">
+                <div class="animal-info">
+                    <span class="animal-name">Cat</span>
+                    <span class="key-badge">C</span>
+                </div>
+            </div>
+
+            <!-- Cow uses "O" since "C" is taken by Cat -->
+            <div class="animal-card" data-sound="sounds/cow.mp3" data-key="o">
+                <img src="images/cow.png" alt="Cow">
+                <div class="animal-info">
+                    <span class="animal-name">Cow</span>
+                    <span class="key-badge">O</span>
+                </div>
+            </div>
+
+            <div class="animal-card" data-sound="sounds/horse.mp3" data-key="h">
+                <img src="images/horse.png" alt="Horse">
+                <div class="animal-info">
+                    <span class="animal-name">Horse</span>
+                    <span class="key-badge">H</span>
+                </div>
+            </div>
+
+            <div class="animal-card" data-sound="sounds/bird.mp3" data-key="b">
+                <img src="images/bird.png" alt="Bird">
+                <div class="animal-info">
+                    <span class="animal-name">Bird</span>
+                    <span class="key-badge">B</span>
+                </div>
+            </div>
+
+            <div class="animal-card" data-sound="sounds/snake.mp3" data-key="s">
+                <img src="images/snake.png" alt="Snake">
+                <div class="animal-info">
+                    <span class="animal-name">Snake</span>
+                    <span class="key-badge">S</span>
+                </div>
+            </div>
+
+            <div class="animal-card" data-sound="sounds/lion.mp3" data-key="l">
+                <img src="images/lion.png" alt="Lion">
+                <div class="animal-info">
+                    <span class="animal-name">Lion</span>
+                    <span class="key-badge">L</span>
+                </div>
+            </div>
+
+            <div class="animal-card" data-sound="sounds/monkey.mp3" data-key="m">
+                <img src="images/monkey.png" alt="Monkey">
+                <div class="animal-info">
+                    <span class="animal-name">Monkey</span>
+                    <span class="key-badge">M</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>🎵 Jungle sounds by Shir Goldstein &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
